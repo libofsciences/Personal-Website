@@ -786,10 +786,13 @@ section {
 
     .home .profession-container .profession-box {
         position: fixed;
-        top: min(67%, calc(100% - 150px));
+        top: calc(50% + 150px); /* Adjust the offset as needed */
         left: 0;
+        right: 0;
+        margin: 0 auto;
         border-radius: 0;
         width: 100%;
+        max-width: 500px;
     }
 
 
@@ -830,6 +833,10 @@ section {
     .home .profession i {
         margin-right: 30px;
     }
+    .home .profession h3 {
+        font-size:  3rem;
+    }
+    
 
     .home .profession-container .overlay {
         position: fixed;

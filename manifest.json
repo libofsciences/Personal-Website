@@ -1,7 +1,7 @@
 {
     "name": "Jagan Personal site",
     "short_name": "Jagan Athen",
-    "start_url": ".",
+    "start_url": "https://jaganathen.github.io/Personal-Website/",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#754ef9",
