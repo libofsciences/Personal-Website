@@ -709,7 +709,7 @@ section {
 }
 
 /* The Screen the size below 890px . .................................................................................................................................(890px) */
-@media (max-width: 890px) {
+@media only screen and (max-width: 890px) {
 
     #menu-icon {
         display: block;
