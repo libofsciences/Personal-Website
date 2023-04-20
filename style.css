@@ -786,7 +786,7 @@ section {
 
     .home .profession-container .profession-box {
         position: fixed;
-        top: 60%;
+        top: 67%;
         left: 0;
         border-radius: 0;
         width: 100%;
@@ -866,7 +866,13 @@ section {
         grid-template-rows: auto 1fr;
 
     }
+    
+    .contact form .btn {
+        text-align: center;
+        width:  50%;
+    }
 
+    
     .btn-container {
         grid-column: 2 / 1;
         grid-row: auto;
@@ -886,5 +892,14 @@ section {
     .about .about-img img {
         width: 80vw;
     }
+
+    .home-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
 
 }
