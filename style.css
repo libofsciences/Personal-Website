@@ -10,14 +10,15 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;     /*--uded for smoth experience*/
-    }
+    scroll-behavior: smooth;
+    /*--uded for smoth experience*/
+}
 
 /* root is a variable to store colors for elements.(i used it for dark /light theme) */
 :root {
-      --bg-color: #fdfdfd !important;
+    --bg-color: #fdfdfd !important;
     --text-color: #333 !important;
-    --main-color: #754ef9 !important;
+    --main-color: #596FB7 !important;
     --white-color: #fdfdfd !important;
     --shadow-color: rgba(0, 0, 0, 0.2) !important;
 }
@@ -145,29 +146,29 @@ section {
 .home {
     display: flex;
     align-items: center;
-  }
-  
-  .home .home-content {
+}
+
+.home .home-content {
     max-width: 44rem;
-  }
-  
-  .home-content h3 {
+}
+
+.home-content h3 {
     font-size: 3rem;
     font-weight: 700;
     line-height: 0.3;
-  }
-  
-  .home-content h1 {
+}
+
+.home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 0.3rem;
-  }
-  
-  .home-content p {
+}
+
+.home-content p {
     font-size: 1.6rem;
-  }
-  
-  .home-content .social-media a {
+}
+
+.home-content .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -181,14 +182,14 @@ section {
     color: var(--main-color);
     margin: 2.5rem 1.5rem 3rem 0;
     transition: 0.5s ease;
-  }
-  
-  .home-content .social-media a:hover {
+}
+
+.home-content .social-media a:hover {
     background: var(--main-color);
     color: var(--white-color);
-  }
-  
-  .btn {
+}
+
+.btn {
     display: inline-block;
     padding: 1.2rem 2.8rem;
     background: var(--main-color);
@@ -200,15 +201,15 @@ section {
     font-weight: 600;
     border: 0.2rem solid transparent;
     transition: 0.5s ease;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: transparent;
     color: var(--main-color);
     border-color: var(--main-color);
-  }
-  
-  .home .profession-container {
+}
+
+.home .profession-container {
     position: absolute;
     top: 50%;
     right: 0;
@@ -217,9 +218,9 @@ section {
     min-height: 100vh;
     overflow: hidden;
     pointer-events: none;
-  }
-  
-  .home .profession-container .profession-box {
+}
+
+.home .profession-container .profession-box {
     position: absolute;
     top: 0;
     right: -50px;
@@ -229,8 +230,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: professionRotate 13s ease-out infinite; 
+    animation: professionRotate 13s ease-out infinite;
 }
+
 /* (this keyframes is used for the rotation of circle behind the home page)  */
 @keyframes professionRotate {
 
@@ -258,7 +260,8 @@ section {
         transform: rotate(-360deg);
     }
 }
-  .home .profession-box .profession {
+
+.home .profession-box .profession {
     position: absolute;
     left: 0;
     display: flex;
@@ -269,7 +272,7 @@ section {
     transform-origin: 384px;
     background: var(--bg-color);
     padding: 20px 0;
-  }
+}
 
 .home .profession-box .profession:nth-child(1) i {
     margin-right: 15px !important;
@@ -328,35 +331,36 @@ section {
     justify-content: center;
     align-items: center;
     gap: 4rem;
-  }
-  
-  .about .about-img img {
-    width: 40vw;
-  }
-  
-  .about-content h2 {
+}
+
+.about .about-img img {
+    width: 30vw;
+    border-radius: 10%;
+}
+
+.about-content h2 {
     text-align: left;
     line-height: 1.2;
-  }
-  
-  .about-content h3 {
+}
+
+.about-content h3 {
     font-size: 2rem;
-  }
-  
-  .about-content p {
+}
+
+.about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-  }
-  
-  .heading {
+}
+
+.heading {
     font-size: 4.5rem;
     text-align: center;
-  }
-  
-  span {
+}
+
+span {
     color: var(--main-color);
-  }
-  
+}
+
 
 /* ........................................................................................... */
 /*................... Services section............................................. */
@@ -417,6 +421,36 @@ section {
 
 }
 
+/* ........................................................................................... */
+/*................... Skill section............................................. */
+/* ............................................................................................. */
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 900px;
+    margin: 2rem auto 0;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 20%;
+}
+
+.skill-item img {
+    max-width: 30%;
+    height: auto;
+    margin: 20px;
+}
+
+.skill-item p {
+    font-size: 1.5rem;
+}
 
 /* ........................................................................................... */
 /*................... Portfolio section............................................. */
@@ -602,6 +636,7 @@ section {
 .go-to-top:hover {
     outline-color: var(--white-color);
 }
+
 /* ....................................................................... */
 
 
@@ -619,13 +654,13 @@ section {
     }
 
     .home .profession-container .profession-box {
-       right:  -12rem;
-        height:  100%;
+        right: -12rem;
+        height: 100%;
     }
 
     .home .profession-container .overlay {
-       right:  -9rem;
-       
+        right: -9rem;
+
     }
 }
 
@@ -640,13 +675,14 @@ section {
     }
 
     .home .profession-container .profession-box {
-        right:  -22rem;
-         }
+        right: -22rem;
+    }
 
     .home .portfolio-container .overlay {
         right: -15rem;
     }
-     .home .home-img img {
+
+    .home .home-img img {
         display: none;
     }
 
@@ -655,7 +691,7 @@ section {
 /* The Screen the size below 998px . .................................................................................................................................(998px) */
 @media (max-width: 998px) {
 
-     .navbar a:nth-child(1),
+    .navbar a:nth-child(1),
     .navbar a:nth-child(2) {
         color: var(--main-color);
     }
@@ -785,7 +821,8 @@ section {
 
     .home .profession-container .profession-box {
         position: fixed;
-        top: calc(50% + 150px); /* Adjust the offset as needed */
+        top: calc(50% + 150px);
+        /* Adjust the offset as needed */
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -832,10 +869,11 @@ section {
     .home .profession i {
         margin-right: 30px;
     }
+
     .home .profession h3 {
-        font-size:  3rem;
+        font-size: 3rem;
     }
-    
+
 
     .home .profession-container .overlay {
         position: fixed;
@@ -866,19 +904,21 @@ section {
         margin-bottom: 3rem;
     }
 
-    .portfolio .portfolio-container {
+    .skill-item img {
+        max-width: 70%;
+    }
 
+    .portfolio .portfolio-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
-
     }
-    
+
     .contact form .btn {
         text-align: center;
-        width:  50%;
+        width: 50%;
     }
 
-    
+
     .btn-container {
         grid-column: 2 / 1;
         grid-row: auto;
